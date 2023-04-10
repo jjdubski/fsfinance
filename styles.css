@@ -1,0 +1,158 @@
+/* Reset default margin and padding */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set font styles */
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+  }
+  
+  /* Set background color */
+  body {
+    background-color: #f3f3f3; /* Light gray */
+  }
+  
+  /* Container */
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  /* Header */
+  header {
+    background-color: #0055a5; /* Blue */
+    color: #fff; /* White */
+    padding: 20px;
+  }
+  
+  header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  /* Navigation */
+  nav {
+    background-color: #006ab3; /* Light blue */
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    color: #0055a5; /* Dark blue */
+    text-decoration: none;
+    padding: 5px;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Home Section */
+#home {
+    background-color: #006ab3; /* Light blue */
+    color: #fff; /* White text color */
+    padding: 100px;
+    text-align: center;
+  }
+  
+  #home h1 {
+    font-size: 48px;
+    font-weight: bold;
+  }
+  
+  #home p {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  
+  #home a {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 24px;
+    background-color: #00477e; /* Dark blue button color */
+    color: #fff; /* White text color */
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  #home a:hover {
+    background-color: #0055a5; /* Lighter blue button color on hover */
+  }
+  
+
+  /* Sections */
+  section {
+    padding: 40px 0;
+  }
+  
+  section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  section p {
+    margin-bottom: 20px;
+  }
+  
+  /* Feature List */
+  ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  ul li {
+    width: 30%;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff; /* White */
+  }
+  
+  ul li img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+  
+  ul li h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  ul li p {
+    font-size: 14px;
+    color: #666; /* Gray */
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333; /* Dark gray */
+    color: #fff; /* White */
+    text-align: center;
+    padding: 10px;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    ul {
+      flex-wrap: wrap;
+    }
+  
+    ul li {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
