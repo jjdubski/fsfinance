@@ -9,10 +9,14 @@
 
   :root {
     --light-gray: #f3f3f3;
+    --gray: #D9D9D9;
+    --blue-gray: #74acbf;
+    --blue: #24B5E5;
     --cyan: #1795bf;
-    --dark-blue: #18596e;
-    --mix: #1b7694;
-    --darker-blue: #154859;
+    --light-blue: #5eb0cc;
+    --mix: #339dc0;
+    --dark-blue: #00477e;
+    --navy: #154859;
   }
 
  body {
@@ -51,15 +55,6 @@ ul {
 article ol,
 article ul {
     list-style-position: inside;
-}
-
-a {
-    /* Places underlines below the descenders */
-    text-underline-position: under;
-
-
-    /* Sets the thickness as a percentage of the font size */
-    text-decoration-thickness: 8;
 }
 
 label,
