@@ -1,4 +1,4 @@
-   /* Container */
+/* Container */
   .container {
     width: 90%;
     margin: 0 auto;
@@ -6,7 +6,7 @@
   
   /* Header */
   header {
-    background-color: --darker-blue; /* Blue */
+    background-color: blue; /* Blue */
     color: #fff; /* White */
     padding: 20px;
   }
@@ -18,7 +18,7 @@
   
   /* Navigation */
   nav {
-    background-color: #006ab3; /* Light blue */
+    background-color: green; /* Light blue */
     padding: 10px;
   }
   
