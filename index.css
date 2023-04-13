@@ -6,49 +6,10 @@
     margin: 0 auto;
   }
   
-  /* Header */
-  header {
-    background-color: var(--navy); /* Blue */
-    color: #fff; /* White */
-    padding: 20px;
-  }
-  
-  header h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
-  }
-  
-  /* Navigation */
-  nav {
-    background-color: var(--navy); /* Light blue */
-    padding: 10px;
-    border-radius: 20px;
-  }
-  
-  nav ul {
-    list-style-type: none;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin-right: 10px;
-    border-radius: 15px;
-    background-color: var(--light-gray);
-  }
-  
-  nav ul li a {
-    color: var(--navy); /* Dark blue */
-    text-decoration: none;
-    padding: 5px;
-  }
-  
-  nav ul li a:hover {
-    text-decoration: underline;
-  }
-  
   /* Home Section */
 #home {
-    background-color: var(--dark-blue); /* Light blue */
+  background: rgb(175,223,244);
+  background: linear-gradient(100deg, rgba(175,223,244,1) 0%, rgba(109,200,217,1) 6%, rgba(53,132,187,1) 25%, rgba(55,134,188,1) 75%, rgba(109,200,217,1) 85%, rgba(153,215,235,1) 100%);
     color: #fff; /* White text color */
     padding: 100px;
     text-align: center;
@@ -68,16 +29,17 @@
     display: inline-block;
     margin-top: 30px;
     padding: 12px 24px;
-    background-color: var(--navy); /* Dark blue button color */
+    background-color: var(--indigo-dye2); /* Dark blue button color */
     color: white; /* White text color */
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.5s ease;
   }
   
   #home a:hover {
-    background-color: #0055a5; /* Lighter blue button color on hover */
+    background-color: var(--sky-blue); 
+    opacity: 0.9;
   }
   
 
