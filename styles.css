@@ -45,7 +45,7 @@
   header {
     display: flex;
     background: rgb(175,223,244);
-background: linear-gradient(340deg, rgba(175,223,244,1) 0%, rgba(109,200,217,1) 10%, rgba(53,132,187,1) 25%, rgba(40,69,101,1) 50%, rgba(13,28,45,1) 75%);
+    background: linear-gradient(340deg, rgba(175,223,244,1) 0%, rgba(109,200,217,1) 10%, rgba(53,132,187,1) 25%, rgba(40,69,101,1) 50%, rgba(13,28,45,1) 75%);
     color: white;
     padding: 20px;
     width: 100%;
