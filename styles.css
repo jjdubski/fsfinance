@@ -145,6 +145,49 @@ summary,
     outline: none;
 }
 
+ /* Feature List */
+ ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+ul li {
+  width: 30%;
+  text-align: center;
+  padding: 20px;
+  background-color: #fff; /* White */
+}
+
+ul li img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+ul li h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+ul li p {
+  font-size: 14px;
+  color: #666; /* Gray */
+}
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+  ul {
+    flex-wrap: wrap;
+  }
+
+  ul li {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
 @media (prefers-reduced-motion: no-preference) {
     html {
           scroll-behavior: smooth;
