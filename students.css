@@ -1,1 +1,28 @@
 @import "styles.css";
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  .login-box {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid var(--gray);
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 400px; /* Set the width of the login box */
+    display: grid;
+    align-content: center;
+    justify-items: center;
+  }
+
+  .signout-box {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid var(--gray);
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 125px; 
+  }

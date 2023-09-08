@@ -2,11 +2,13 @@
 <html lang="en">
 <head>
       <meta charset="UTF-8">
+      <meta name="google-signin-client_id" content="129941330402-850qmgvfhe4bg07lc05ov8fc1lc8otf0">
       <link rel="stylesheet" href="styles.css">
-      <link rel="stylesheet" href="studnets.css">
+      <link rel="stylesheet" href="students.css">
       <title>Students</title>
 </head>
 <body>
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
   <!-- Header -->
   <header>
     <div>
@@ -23,5 +25,33 @@
         <li><a href="contact.html">Contact Us</a></li>
       </ul>
   </nav>
-  </body>
+  <!-- Centered Login Box -->
+  <div class="box-container">
+    <div class="login-box">
+      <h3>Login with your Google Account</h3>
+      <div class="g-signin2" data-onsuccess="onSignIn" style="padding: 20px 0px 10px 10px;"></div>
+    </div>
+  </div>
+  <div class="box-container">
+    <div class="signout-box">
+      <script>
+        function signOut() {
+        var auth2 = gapi.auth2.getAuthInstance();
+        auth2.signOut().then(function () {
+        console.log('User signed out.');
+          });
+        }
+      </script>
+      <a href="#" onclick="signOut();">Sign out</a>
+      </div>
+  </div>
+
+  <script>
+    gapi.load('auth2', function() {
+        gapi.auth2.init({
+            client_id: '129941330402-850qmgvfhe4bg07lc05ov8fc1lc8otf0'
+        });
+    });
+  </script>
+</body>
 </html>
