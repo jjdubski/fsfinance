@@ -1,1 +1,37 @@
 @import "styles.css";
+
+body{
+    background-color: var(--uranian-blue); /* Use any color you like */
+}
+
+.media-page {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.media-page h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    max-width: 1000px;
+}
+
+.media-page video {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.media-page h3 {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.contact-form button:hover {
+    background-color: var(--indigo-dye); /* Use any color you like */
+}
