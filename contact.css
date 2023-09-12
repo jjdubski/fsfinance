@@ -1,16 +1,14 @@
 @import "styles.css";
 
-body{
-    background-color: var(--uranian-blue); /* Use any color you like */
-}
-
 .contact-form {
-    width: 100%;
+    width: 60%;
     margin: 0 auto;
     padding: 20px;
     display: grid;
     justify-content: center;
     align-items: center;
+    background-color: var(--uranian-blue);
+    min-width: 400px;
 }
 
 .contact-form h2 {
