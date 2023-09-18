@@ -2,19 +2,22 @@
 
 .contact-form {
     width: 60%;
-    margin: 50px auto auto auto;
-    padding: 30px;
+    margin: 50px auto auto;
+    padding: 5% 0;
     display: grid;
     justify-content: center;
     align-items: center;
-    background-color: var(--uranian-blue);
+    background-color: var(--steel-blue);
     min-width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add box shadow */
 }
 
 .contact-form h2 {
     text-align: center;
     margin-bottom: 20px;
-    font-size: 24px;
+    font-size: 1.75rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--light-gray);
     max-width: 1000px;
 }
 
@@ -26,8 +29,10 @@
 }
 
 .contact-form label {
-    font-size: 18px;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 5px;
+    color: var(--light-gray);
 }
 
 .contact-form input,
@@ -44,15 +49,16 @@
 }
 
 .contact-form button {
-    padding: 10px 20px;
+    padding: 10px 0px;
     font-size: 18px;
     color: white;
-    background-color: var(--indigo-dye2); /* Use any color you like */
+    background-color: var(--indigo-dye); /* Use any color you like */
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin: 20px 0px 0px;
 }
 
 .contact-form button:hover {
-    background-color: var(--indigo-dye); /* Use any color you like */
+    background-color: var(--dark-blue); /* Use any color you like */
 }
