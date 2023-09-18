@@ -2,8 +2,8 @@
 
 .contact-form {
     width: 60%;
-    margin: 0 auto;
-    padding: 20px;
+    margin: 50px auto auto auto;
+    padding: 30px;
     display: grid;
     justify-content: center;
     align-items: center;
