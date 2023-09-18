@@ -18,9 +18,8 @@
     --cyan: #1795bf;
     --light-blue: #5eb0cc;
     --mix: #339dc0;
-    --dark-blue: #00477e;
-    --navy: #154859;
     */
+    --dark-blue: #00477e;
     --indigo-dye: #284565;
     --indigo-dye2: #03467e;
     --steel-blue: #3584bb;
@@ -29,7 +28,6 @@
     --tiffany-blue: #8cd1d2;
     --sky-blue: #6dc8d9;
     --blue-munsell: #418393;
-    --midnight-green: #215761;
   }
  
  body {
