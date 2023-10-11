@@ -1,5 +1,10 @@
 @import "styles.css";
 
+#focused{
+    opacity: 100%;
+    background-color: inherit;
+}
+
 .body{
     white-space: normal;
     overflow: auto;
