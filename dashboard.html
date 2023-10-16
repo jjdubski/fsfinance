@@ -31,9 +31,11 @@
         <button class="button">
             <p>Start Learning</p>
         </button>
-        <div class="profile">
-            <img src="pfp.png" alt="pfp" width="40" height="40">
-            <p>Olivia Rhye</p>
+        <div class="profile_container">
+          <div class="profile">
+                <img src="pfp.png" alt="pfp" width="40" height="40">
+                <p>Olivia Rhye</p>
+            </div>
             <img src="signout.png" alt="logout" width="20" height="20">
         </div>
     </div>
@@ -43,7 +45,8 @@
             <p style="font-size: small;">This is your learning dashboard.</p>
         </div>
         <div class="date">
-            <h3 class="timestamp">Sep 20 2023, Friday</h3>
+            <p class="timestamp" id="date"></p>
+            <script src="date.js"></script>
         </div>
         <div class="dash_top">
             <div class="welcome">
@@ -61,19 +64,29 @@
         <div class="class">
             <div class="class_top">
                 <h2>Your Classes:</h2>
-            <button class="button">
-                <h2>+</h2>
-                <p>Add Class</p>
-            </button>
+                <button class="button" onclick="showPopup()">
+                    <h2>+</h2>
+                    <p>Add Class</p>
+                </button>
+                <script src="addclass.js"></script>
             </div>
-            <div class="bubble">
-                <img src="classpic.png" alt="CN" width="50px" height="50px">
-                <div class="class_info">
-                    <p>Class Name</p>
-                    <p>Shams Tabrez</p>
+            <div class="bubble_container">
+                <div class="bubble">
+                    <img src="classpic.png" alt="CN" width="50px" height="50px">
+                    <div class="class_info">
+                        <p>Class Name</p>
+                        <p>Teacher Name</p>
+                    </div>
+                </div>
+                <div class="bubble">
+                    <img src="classpic.png" alt="EC" width="50px" height="50px">
+                    <div class="class_info">
+                        <p>ECON 101</p>
+                        <p>Mr. Gonzalez</p>
+                    </div>
                 </div>
             </div>
-        </div>
+        </di>
     </div>
 </body>
 </html>

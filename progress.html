@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>Progress</title>
     <link rel="stylesheet" href="dashboard.css">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -31,11 +31,13 @@
         <button class="button">
             <p>Start Learning</p>
         </button>
-        <div class="profile">
-            <img src="pfp.png" alt="pfp" width="40" height="40">
-            <p>Olivia Rhye</p>
-            <img src="signout.png" alt="logout" width="20" height="20">
-        </div>
+        <div class="profile_container">
+            <div class="profile">
+                  <img src="pfp.png" alt="pfp" width="40" height="40">
+                  <p>Olivia Rhye</p>
+              </div>
+              <img src="signout.png" alt="logout" width="20" height="20">
+          </div>
     </div>
     <div class="dashboard">
         <div class="dash_title">
@@ -43,7 +45,8 @@
             <p style="font-size: small;">Please select your class to see progress.</p>
         </div>
         <div class="date">
-            <h3 class="timestamp">Sep 20 2023, Friday</h3>
+            <p class="timestamp" id="date"></p>
+            <script src="date.js"></script>
         </div>
     </div>
 </body>

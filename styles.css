@@ -145,14 +145,13 @@ summary,
   background-color: var(--indigo-dye2); /* Dark blue button color */
   color: white; /* White text color */
   text-decoration: none;
-  font-weight: bold;
   transition: background-color 0.5s ease;
   font-family: 'Roboto', sans-serif;
   letter-spacing: 1.5px;
 }
 
 .button:hover {
-  background-color: var(--steel-blue); 
+  background-color: var(--sky-blue); 
   opacity: 0.9;
 }
 

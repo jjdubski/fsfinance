@@ -1,0 +1,9 @@
+select {
+    font-size: 1.3em;
+    height: 50px;
+    width: 300px; /* adjust the value to your desired height */
+}
+
+.dropdown{
+    margin-top: 20px;
+}
