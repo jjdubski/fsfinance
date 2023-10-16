@@ -33,10 +33,7 @@ function showPopup() {
     bubble.appendChild(classPic);
     bubble.appendChild(classInfo);
 
-    // append bubble to bubble container
-    bubbleContainer.appendChild(bubble);
-
-    // append bubble container to dashboard
-    const dashboard = document.querySelector(".class");
-    dashboard.appendChild(bubbleContainer);
+    // append bubble to bubble conatiner
+    const dashboard = document.querySelector(".bubble_container");
+    dashboard.appendChild(bubble);
 }
