@@ -34,6 +34,9 @@ function showPopup() {
     bubble.appendChild(classInfo);
 
     // append bubble to bubble container
-    const dashboard = document.querySelector(".bubble_container");
-    dashboard.appendChild(bubble);
+    bubbleContainer.appendChild(bubble);
+
+    // append bubble container to dashboard
+    const dashboard = document.querySelector(".class");
+    dashboard.appendChild(bubbleContainer);
 }

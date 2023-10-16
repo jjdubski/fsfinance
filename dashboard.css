@@ -202,6 +202,16 @@ a{
     margin-top: 10px;
     flex-direction: row;
 }
+
+select {
+    font-size: 1.2em;
+    height: 50px;
+    width: 300px; /* adjust the value to your desired height */
+}
+
+.dropdown{
+    margin-top: 20px;
+}
 /*needs fixing*/
 @media screen and (max-width: 768px) {
     .profile, .date, .dashboard, .dash_top, .graph, .class {
