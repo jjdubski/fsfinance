@@ -2,7 +2,16 @@
 
 #focused{
     opacity: 100%;
+    background-color: var(--uranian-blue);
+}
+
+#unfocused{
+    opacity: 60%;
     background-color: inherit;
+}
+
+#unfocused:hover{
+    opacity: 100%;
 }
 
 .body{
@@ -23,6 +32,7 @@
 .welcome p{
     margin-top: 10px;
     font-size: 0.9em;
+    max-height: fit-content
 }
 .dash_title h2, .welcome h2, .class h2{
     font-size: 1.5em;
@@ -47,15 +57,26 @@
 .sidebar h2 {
     font-size: 18px;
 }
+.sidebar button{
+    margin-top: 50px;
+}
 .options{
     width: 100%;
+    margin-top: 50px;
 }
 
-.options div{
-    display: flex;
+a{  
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    text-decoration: none; 
+    color: inherit;
+}
+
+.options a{
     gap: 10px;
-    padding: 15px 0px 15px 3em;
-    margin-top: 40px;
+    padding: 10px 0px 10px 3em;
+    margin: 10px 0 10px 0;
     width: 100%;
     height: fit-content;
     justify-content: left;
@@ -64,23 +85,17 @@
     font-size: 16px;
     text-align: center;
 }
-.button{
-    margin-top: 60px;
-    background-color: var(--blue-munsell);
+
+.button {
+    display: flex;
+    gap: 5px;
+    align-items: center;
     border-radius: 10px;
-    padding: 15px 30px;
     color: white;
     font-size: 1em;
-    font-family: 'Roboto', sans-serif;
     font-weight: 300;
     letter-spacing: 1.5px;
 }
-
-.button:hover{
-    background-color: var(--steel-blue); 
-    opacity: 0.8;
-}
-
 
 .profile{
     border: solid black;
@@ -113,7 +128,7 @@
 }
 .dash_top{
     display: flex;
-    width: 90%;
+    width: calc(100%-100px);
     gap: 5%
 }
 
@@ -139,6 +154,14 @@
 .class{
     margin-top: 20px;
     font-size: 0.8em;
+    display: flex;
+    flex-direction: column;
+}
+.class_top{
+    display: flex;
+    align-items: center;
+    margin-right: 30%;
+    justify-content: space-between;
 }
 
 .class_info{
