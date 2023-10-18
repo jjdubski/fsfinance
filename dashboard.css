@@ -32,7 +32,7 @@
 .welcome p{
     margin-top: 10px;
     font-size: 0.9em;
-    max-height: fit-content
+    max-height: fit-content;
 }
 .dash_title h2, .welcome h2, .class h2{
     font-size: 1.5em;
