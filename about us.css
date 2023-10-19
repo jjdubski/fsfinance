@@ -1,0 +1,46 @@
+@import "styles.css";
+
+body{
+    background-color: var(--uranian-blue); /* Use any color you like */
+}
+
+.sidenav {
+    background-color: #c9c7c7;
+    border: 1px solid #686868;
+    text-align: center;
+    right: 80px;
+    height: 220px;
+    width: 200px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.sidenav {
+    width: 180px;
+    z-index: 1;
+    top: 20px;
+    left: 10px;
+    background: #eee;
+    overflow-x: hidden;
+    padding: 8px 0;
+  }
+  
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #2196F3;
+    display: block;
+  }
+
+.sidenav a:hover {
+    color: #064579;
+  }
+
+.main {
+    margin-left: 140px; /* Same width as the sidebar + left position in px */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+    background-color: #ffffff;
+    border: 1px solid #686868;
+  }
