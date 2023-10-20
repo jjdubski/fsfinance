@@ -93,6 +93,7 @@
     font-weight: normal;
     color: var(--indigo-dye);
     text-decoration: none;
+    letter-spacing: 1px;
   }
   
   nav ul li a:hover {
