@@ -20,6 +20,7 @@
     --light-blue: #5eb0cc;
     --mix: #339dc0;
     */
+    --teal: #1b7694;
     --dark-blue: #00477e;
     --indigo-dye: #284565;
     --indigo-dye2: #03467e;
@@ -192,15 +193,28 @@ ul li p {
 .box-container {
   display: flex;
   justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.box_container_row{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
 }
 
  /* Footer */
 footer {
+  width: 100%;
   background-color: darkgray; /* Dark gray */
   color: white; /* White */
   text-align: center;
   padding: 10px;
 }
+
+
 
 
 /* Media Queries */
