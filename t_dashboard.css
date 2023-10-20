@@ -1,0 +1,228 @@
+@import "styles.css";
+
+#focused{
+    opacity: 100%;
+    background-color: var(--uranian-blue);
+}
+
+#unfocused{
+    opacity: 60%;
+    background-color: inherit;
+}
+
+#unfocused:hover{
+    opacity: 100%;
+}
+
+.body{
+    white-space: normal;
+    overflow: auto;
+}
+
+.welcome{
+    width: 70%;
+    padding: 30px;
+    border-radius: 10px;
+    color:  #ffff;
+    margin-top: 20px;
+    background: rgb(175,223,244);
+    background: linear-gradient(100deg, rgba(175,223,244,1) 0%, rgba(109,200,217,1) 2%, rgba(53,132,187,1) 30%, rgba(55,134,188,1) 90%, rgba(109,200,217,1) 95%, rgba(153,215,235,1) 100%);
+}
+
+.welcome p{
+    margin-top: 10px;
+    font-size: 0.9em;
+    max-height: fit-content;
+}
+.dash_title h2, .welcome h2, .class h2{
+    font-size: 1.5em;
+    letter-spacing: 0.5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.sidebar {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    min-width: 250px;
+    max-width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.sidebar h2 {
+    font-size: 18px;
+}
+.sidebar button{
+    margin-top: 50px;
+}
+.options{
+    width: 100%;
+    margin-top: 50px;
+}
+
+a{  
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    text-decoration: none; 
+    color: inherit;
+}
+
+.options a{
+    gap: 10px;
+    padding: 20px 0px 20px 3em;
+    width: 100%;
+    height: fit-content;
+    justify-content: left;
+    border: 1px solid var(--indigo-dye);
+    border-width: 1px 0px 0px 0px;
+}
+.options a:last-of-type{
+    border-width: 1px 0px 1px 0px;
+}
+.options h3{
+    font-size: 16px;
+    text-align: center;
+}
+
+.button {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    border-radius: 10px;
+    color: white;
+    font-size: 1em;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+}
+
+.profile_container{
+    border: solid black;
+    border-width: 1px 0 0 0;
+    padding-top: 15px;
+    justify-content: center;
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+    width: 90%;
+    position: absolute;
+    bottom: 50px;
+}
+.profile{
+    display: flex;
+    min-width: fit-content;
+    align-items: center;
+    gap: 10px;
+    text-wrap: nowrap;
+}
+
+.date{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px 20px 0px;
+    height: fit-content;
+    font-size: 1.1em;
+}
+
+.dashboard {
+    display: grid;
+    width: calc(100%-280px);
+    height: 100%;
+    justify-content: left;
+    align-items: center;
+    margin: 50px 50px 0px 280px;
+}
+.dash_top{
+    display: flex;
+    width: calc(100%-100px);
+    gap: 5%
+}
+
+.dash_title{
+    align-items: center;
+    justify-content: center;
+    left: 600px;
+}
+
+.graph {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.graph h3 {
+    font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 20px;
+}
+.class{
+    margin-top: 20px;
+    font-size: 0.8em;
+    display: flex;
+    flex-direction: column;
+}
+.class_top{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    justify-content: space-between;
+}
+
+.class_info{
+    flex-direction: column;
+    padding: 5px 5px 5px 10px;
+}
+.bubble_container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    min-width: 450px;
+    max-width: 80%;
+}
+
+.bubble{
+    display: flex;
+    border: 1px solid black;
+    box-shadow: 1px black;
+    min-width: 200px;
+    max-width: fit-content;
+    max-width: -moz-fit-content;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    flex-direction: row;
+}
+
+select {
+    font-size: 1.2em;
+    height: 50px;
+    width: 300px; /* adjust the value to your desired height */
+}
+
+.dropdown{
+    margin-top: 20px;
+}
+/*needs fixing*/
+@media screen and (max-width: 768px) {
+    .profile, .date, .dashboard, .dash_top, .graph, .class {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .dashboard, .dash_top {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
