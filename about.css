@@ -94,6 +94,7 @@ body{
   }
   .founder img{
     min-height: 160px;
+    max-width: 200px;
   }
   .founder p:last-of-type{
     font-weight: 700;
