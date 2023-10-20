@@ -66,12 +66,25 @@
   section h2 {
     font-size: 24px;
     margin-bottom: 20px;
+    border: 1px solid var(--indigo-dye);
+    border-width: 0 0 1px;
   }
   
   section p {
     margin-bottom: 20px;
   }
+
+  #contact{
+    margin-bottom: 50px;
+  }
   
+  #contact h2 {
+    margin: 0 auto 20px;
+    width: fit-content;
+    text-align: center;
+    padding: 0px 30px 5px;
+  }
+
   /* Media Queries */
   @media (max-width: 768px) {
     ul {
