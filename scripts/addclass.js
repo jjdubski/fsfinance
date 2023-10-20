@@ -13,7 +13,7 @@ function showPopup() {
 
     // create bubble content
     const classPic = document.createElement("img");
-    classPic.src = "/images/classpic.png";
+    classPic.src = "../images/classpic.png";
     classPic.alt = "Class Pic";
     classPic.width = "50";
     classPic.height = "50";
