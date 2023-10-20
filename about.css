@@ -59,7 +59,7 @@ body{
     text-wrap: wrap;  
     margin: 0;
     font-size: 1.05em;
-    padding: 40px 150px;
+    padding: 40px 15vw;
   }
   .box_container_row h2, .box_container h2{
     font-size: 1.5em;
@@ -71,7 +71,10 @@ body{
   .box_container:nth-of-type(even) {
     background-color: var(--teal);
     color: var(--light-gray);
-    padding: 60px 150px;
+    padding: 60px inherit;
+  }
+  .box_container:nth-of-type(even) h2{
+    border-color: var(--light-gray);
   }
   
   .box_container:first-of-type, .box_container_row:last-of-type{

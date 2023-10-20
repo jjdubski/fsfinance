@@ -158,16 +158,20 @@ body{
 }
 .title{
     text-align: center;
-    margin: 20px 0px;
+    margin: 20px auto;
     font-size: 2em;
+    border: 1px solid var(--indigo-dye);
+    border-width: 0 0 1px 0;
+    max-width: 1080px;
 }
 .video_container {
-    margin: 10px 50px 0px;
+    margin: 10px auto;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
     flex-wrap: wrap;
+    max-width: 1080px;
 }
 .video, .placeholder{
     width: 320px;
