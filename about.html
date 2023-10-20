@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="styles.css">
       <link rel="stylesheet" href="about.css">
-      <title>Admins</title>
+      <title>About Us</title>
 </head>
 <body>
   <header>
@@ -24,27 +24,65 @@
       <li><a href="contact.html">Contact Us</a></li>
     </ul>
   </nav>
-
+  <!--
   <div class="sidenav">
     <a href="#ourcompany">Our Company</a>
     <a href="#ourtech">Our Tech</a>
     <a href="#ourresults">Our Results</a>
   </div>
-
+-->
   <div class="main">
-    <h2>Our Company</h2>
-    <p>First Step Finance LLC was founded in March 2022 in Illinois.</p>
-    <p>Our founders felt the need to dosomething about the lack of financial</p>
-    <p>provide students with a cutting-edge curriculum and technology.</p><br /><br />
-    <h2>Our Tech</h2>
-    <p>We use a full curriculum that teaches students about budgeting and</p>
-    <p>finance, as well as many other forms of updated education.</p>
-    <p>Our curriculum spans multiple classes and we use social</p>
-    <p>media to help make interactable experiences for students.</p><br /><br />
-    <h2>Our Results</h2>
-    <p>We have 60 students and 100% engagement rates.</p><br /><br />
+    <div class="box_container_row">
+      <img src="logo_transparent.png" alt="logo">
+      <div class="box_container" style="flex-direction: column">
+        <h2>Our Company</h2>
+        <p>First Step Finance LLC was founded in March 2022 in Illinois.
+          Our founders felt the need to do something about the lack of financial education in schools. 
+          Since then our team has been working hard to provide students with a cutting-edge curriculum and technology.</p>
+      </div>
+    </div>
+    <div class="box_container">
+      <h2>Our Tech</h2>
+      <p>We use a full curriculum that teaches students about budgeting and
+      finance, as well as many other forms of updated education.
+      Our curriculum spans multiple classes and we use social
+      media to help make interactable experiences for students.</p>
+    </div>
+    <div class="box_container">
+      <h2>Our Founders</h2>
+      <div class="box_container_row" id="founders" style="flex-wrap: wrap;">
+        <div class="founder">
+          <img src="benm.jpg" alt="BenMielke">
+          <p>Ben Mielke</p>
+          <p>CFO</p>
+        </div>
+        <div class="founder">
+          <img src="frankp.jpg" alt="FrankPastula">
+          <p>Frank Pastula</p>
+          <p>CMO</p>
+        </div>
+        <div class="founder">
+          <img src="ap.jpg" alt="AnthonyPaul">
+          <p>Anthony Paul</p>
+          <p>CEO</p>
+        </div>
+        <div class="founder">
+          <img src="joep.jpg" alt="JoePatton">
+          <p>Joe Patton</p>
+          <p>COO</p>
+        </div>
+        <div class="founder">
+          <img src="jw.jpg" alt="JacobWaksmanski">
+          <p>Jacob Waksmanski</p>
+          <p>CTO</p>
+        </div>
+      </div>
+    </div>
+    <div class="follow_us">
+      <h2>Follow Us on LinkedIn!</h2>
+      <a href="https://www.linkedin.com/company/first-step-finance-llc"><button class="button">Click Here</button></a>
+    </div>
   </div>
-
   <footer>
     <p>&copy; 2023 First Step Finance LLC. All rights reserved.</p>
   </footer>
