@@ -1,0 +1,76 @@
+.box_container{
+    min-width: 276px;
+    max-width: 40%;
+}
+
+.box_container h2{
+    font-size: 2em;
+    margin: 0;
+    padding: 0 0 5px;
+    color: var(--indigo-dye);
+    border: 1px solid black;
+    border-width: 0 0 1px 0;
+}
+
+.main .box_container_row:nth-child(1){
+    gap: 100px;
+}
+
+.main .box_container_row:not(.box_container .box_container_row){
+    gap: 100px;
+}
+
+.box_container img{
+    width: 100%;
+    max-width: 400px;
+}
+
+#shadowBox{
+    background-color: var(--light-gray);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 2px 2px 5px black;
+    padding: 40px 50px;
+}
+
+#definitionBox, #exampleBox{
+    font-size: 1.1em;
+    display: inline;
+    justify-content: start;
+    align-items: normal;
+    text-wrap: wrap;
+}
+
+#definitionBox h3, #definitionBox p, #exampleBox h3,
+#exampleBox p {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+}
+
+#definitionBox h3, #exampleBox h3{
+    color: var(--indigo-dye2);
+    text-decoration: underline;
+    font-size: 1.1em;
+    margin: 0 0 0 0.35em;
+    height: fit-content;
+}
+@media screen and (max-width: 768px){
+    .main .box_container_row:not(.box_container .box_container_row){
+        flex-direction: column;
+        gap: 50px;
+    }
+    .box_container{
+        max-width: 90%;
+    }
+    #shadowBox{
+        padding: 20px 30px;
+    }
+    #definitionBox, #exampleBox{
+        font-size: 1em;
+    }
+    #definitionBox h3, #exampleBox h3{
+        font-size: 1em;
+    }
+}

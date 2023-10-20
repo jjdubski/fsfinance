@@ -7,39 +7,60 @@
     <title>Dashboard</title>
     <link rel="stylesheet" href="../styles/s_dashboard.css">
     <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/training.css">
+    <link rel="stylesheet" href="../styles/question.css">
+    <script src="../scripts/question.js"></script>
 </head>
 <body>
-      <div class="sidebar">
+      <div class="topbar">
             <a href="../index.html">
                   <img src="../images/logo_transparent.png" alt="logo" width="60" height="55">
                   <h2>First Step Finance</h2>
             </a>
-            <a href="s_dashboard.html">
-                  <button class="button">
-                      <p>Stop Learning</p>
-                  </button>
-              </a>
-            <div class="profile_container">
-                  <div class="profile">
-                        <img src="../images/pfp.png" alt="pfp" width="40" height="40">
-                        <p>Olivia Rhye</p>
-                  </div>
-                  <a href="../index.html">
-                        <img src="../images/signout.png" alt="logout" width="20" height="20">
+            <div class="button_container">
+                  <a href="s_dashboard.html">
+                        <button class="button">Stop Learning</button>
                   </a>
-            </div>
-      </div>
-      <div class="dashboard">
-            <div class="dash_top">
-                  <div class="date">
-                        <p class="timestamp" id="date"></p>
-                        <script src="../scripts/date.js"></script>
-                  </div>
                   <a href="completed.html">
                         <button class="button">Continue</button>
                   </a>
             </div>
-            
+      </div>
+      <div class="dashboard">
+            <div class="main">
+                  <div class="box_container" id="questionBox">
+                        <h2 class="question">
+                              What is the definiton of stock?
+                        </h2>
+                        <div class="box_container">
+                              <div class="response" onclick="checkAnswer()">
+                                    <img><p>A: </p><p>A type of government-issued bond</p>
+                              </div>
+                              <div class="response" onclick="checkAnswer()">
+                                    <img><p>B: </p><p>A long-term loan provided to a corporation</p>
+                              </div>
+                              <div class="response" onclick="checkAnswer()">
+                                    <img><p>C: </p><p>A certificate of deposit (CD) from a bank</p>
+                              </div>
+                              <div class="response" onclick="checkAnswer()" id="correct">
+                                    <img><p>D: </p><p>A security that represents ownership in a corporation</p>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+            <div class="profile_container">
+                  <div class="profile">
+                        <img src="../images/pfp.png" alt="pfp" width="40" height="40">
+                        <p>Olivia Rhye</p>
+                        <a href="../index.html">
+                              <img src="../images/signout.png" alt="logout" width="20" height="20">
+                        </a>
+                  </div>
+                  <div class="date">
+                        <p class="timestamp" id="date"></p>
+                        <script src="../scripts/date.js"></script>
+                  </div>
+            </div>
       </div>
 </body>
 </html>

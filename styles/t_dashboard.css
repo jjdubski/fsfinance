@@ -59,6 +59,14 @@
 }
 .sidebar button{
     margin-top: 50px;
+    background-color: var(--light-gray);
+    color: var(--indigo-dye);
+    border: 1px solid var(--indigo-dye);
+}
+.sidebar button:hover{
+    background-color: var(--indigo-dye2);
+    color: var(--light-gray);
+    transition: all 0.3s ease-in-out;
 }
 .options{
     width: 100%;
