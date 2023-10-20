@@ -27,38 +27,48 @@
       <li><a href="contact.html">Contact Us</a></li>
     </ul>
   </nav>
-  <!-- Centered Login Box -->
-  <div class="box-container">
-    <div class="login-box">
-      <h3>Login with your Google Account</h3>
-      <div class="g-signin2" data-onsuccess="onSignIn" style="padding: 20px 0px 10px 10px;"></div>
-    </div>
-  </div>
-  <div class="box-container">
-    <div class="login-box">
-      <a href="dashboard.html"><h3>Sign In as Guest</h3></a>
-    </div>
-  </div>
-  <div class="box-container">
-    <div class="signout-box">
-      <script>
-        function signOut() {
-        var auth2 = gapi.auth2.getAuthInstance();
-        auth2.signOut().then(function () {
-        console.log('User signed out.');
-          });
-        }
-      </script>
-      <a href="#" onclick="signOut();">Sign out</a>
+  <div class="main">
+    <h2>Teacher Login</h2>
+    <!-- Centered Login Box -->
+    <div class="box-container">
+      <div class="login-box">
+        <h3>Login with your Google Account</h3>
+        <div class="g-signin2" data-onsuccess="onSignIn" style="padding: 30px 0px 50px 0px; width: 200px; height: 40px;"></div>
       </div>
-  </div>
+    </div>
+    <div class="box-container">
+      <a href="t_dashboard.html">
+        <div class="login-box">
+          <h3>Sign In as Guest</h3>
+        </div>
+      </a>
+    </div>
+    <div class="box-container">
+      <a href="#" onclick="signOut();">
+        <div class="signout-box">
+          <script>
+            function signOut() {
+            var auth2 = gapi.auth2.getAuthInstance();
+            auth2.signOut().then(function () {
+            console.log('User signed out.');
+              });
+            }
+          </script>
+          <p>Sign out</p>
+        </div>
+      </a>
+    </div>
 
-  <script>
-    gapi.load('auth2', function() {
-        gapi.auth2.init({
-            client_id: '129941330402-850qmgvfhe4bg07lc05ov8fc1lc8otf0'
-        });
-    });
-  </script>
+    <script>
+      gapi.load('auth2', function() {
+          gapi.auth2.init({
+              client_id: '129941330402-850qmgvfhe4bg07lc05ov8fc1lc8otf0'
+          });
+      });
+    </script>
+  </div>
+  <footer>
+    <p>&copy; 2023 First Step Finance LLC. All rights reserved.</p>
+  </footer>
 </body>
 </html>

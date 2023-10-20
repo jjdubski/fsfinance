@@ -1,15 +1,51 @@
 @import "styles.css";
 
+h2:first-of-type {
+    font-family: Roboto;
+    font-weight: 300;
+    text-align: center;
+    margin: 30px auto;
+    padding: 0px 30px 10px;
+    font-size: 2.2em;
+    border: 1px solid var(--light-gray);
+    border-width: 0px 0px 1px 0px;
+    width: fit-content;
+}
+
+.main{
+    background-color: var(--steel-blue);
+    color: white;
+    margin: 60px auto;
+    padding: 20px 10px;
+    min-width: 320px;
+    width: 60%;
+    box-shadow: 5px 5px var(--gray);
+    border-radius: 50px;
+}
+
+.main a{  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--indigo-dye);
+    min-width: 300px;
+}
+
 .box-container {
-    margin-top: 50px;
+    margin-bottom: 30px;
+    min-width: 300px;
 }
 
 .login-box {
     text-align: center;
     padding: 20px;
     border: 1px solid var(--gray);
+    border-radius: 10px;
     background-color: white;
+    color: var(--indigo-dye);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    min-width: 300px;
     width: 400px; /* Set the width of the login box */
     display: grid;
     align-content: center;

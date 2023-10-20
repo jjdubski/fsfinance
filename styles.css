@@ -31,8 +31,17 @@
     --sky-blue: #6dc8d9;
     --blue-munsell: #18596e;
   }
+  html {
+    font-size: 100%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    height: 100%;
+    -webkit-text-size-adjust: none; /* for iOS Safari */
+    text-size-adjust: none; /* for other mobile browsers */
+  }
  
  body {
+    height: 100%;
     font-family: poppins, sans-serif;
     font-size: 16px;
     background-color: var(--light-gray); /* Light gray */
@@ -107,11 +116,6 @@ img {
     max-width: 100%;
 }
 */
-
-html {
-    -webkit-text-size-adjust: none; /* for iOS Safari */
-    text-size-adjust: none; /* for other mobile browsers */
-  }
 
 menu:not(article menu),
 ol:not(article ol),
@@ -206,16 +210,17 @@ ul li p {
   margin: 0;
 }
 
- /* Footer */
+/* Footer */
 footer {
+  position: static;
+  left: 0;
+  bottom: 0;
   width: 100%;
   background-color: darkgray; /* Dark gray */
   color: white; /* White */
   text-align: center;
   padding: 10px;
 }
-
-
 
 
 /* Media Queries */

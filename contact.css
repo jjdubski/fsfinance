@@ -9,7 +9,8 @@
     align-items: center;
     background-color: var(--steel-blue);
     min-width: 400px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add box shadow */
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2); /* Add box shadow */
+    border-radius: 50px;
 }
 
 .contact-form h2 {
