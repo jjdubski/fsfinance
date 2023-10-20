@@ -1,0 +1,130 @@
+body{
+   height: 100%;
+}
+.dashboard{
+    background-color: var(--indigo-dye2);
+    margin: 0 auto;
+    padding: 0;
+    height: fit-content;
+    min-height: 100%;
+}
+.date{
+    color: var(--light-gray);
+    top: auto;
+    right: 10px;
+    bottom: 10px;
+    padding: 20px 20px 0px;
+    height: fit-content;
+    font-size: 1.1em;
+}
+.main{
+    padding-top: 85px;
+    width: 100%;
+    height: fit-content;
+}
+.topbar {
+    padding: 15px 0px 15px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: fit-content;
+    width: 100%;
+    position: fixed;
+    background-color: var(--light-gray);
+    border: 1px solid black;
+    border-width: 0 0 1px 0;
+}
+.button_container{
+    display: flex;
+    gap: 20px;
+    position: fixed;
+    right: 30px;
+}
+.button{
+    background-color: var(--indigo-dye);
+}
+.button:hover{
+    background-color: var(--light-gray);
+    color: var(--indigo-dye2);
+    border: 1px solid var(--indigo-dye);
+    transition: all 0.2s ease-in-out;
+}
+.button_container a:last-of-type button{
+    background-color: var(--light-gray);
+    color: var(--indigo-dye);
+    border: 1px solid var(--indigo-dye);
+}
+.button_container a:last-of-type button:hover{
+    background-color: var(--indigo-dye);
+    color: var(--light-gray);
+    transition: all 0.2s ease-in-out;
+}
+.profile_container{
+    background-color: var(--light-gray);
+    border: none;
+    padding: 10px 20px;
+    width: fit-content;
+    position: absolute;
+    left: 30px;
+    bottom: 20px;
+    border-radius: 10px;
+}
+.profile{
+    margin-top: 0;
+    padding-top: 0;
+    display: flex;
+    min-width: fit-content;
+    align-items: center;
+    gap: 10px;
+    text-wrap: nowrap;
+}
+@media screen and (max-width: 768px) {
+    .dashboard{
+        height: auto;
+        margin-top: 0;
+        padding-top: 0;
+    }
+    .main {
+        padding-top: 10s0px;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .topbar h2{
+        display: none;
+    }
+    .profile_container{
+        background-color: inherit;
+        padding: 20px;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        left: 0;
+        bottom: 0;
+    }
+    .profile{
+        width: fit-content;
+        background-color: var(--light-gray);
+        border-radius: 10px;
+        padding: 5px 10px;
+        margin-right: 10px;
+        gap: 10px;
+        left: auto;
+        right: auto;
+        bottom: 0;
+    }
+    .date{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+        padding: 0;
+        margin: 0;
+        bottom: 0;
+        position: relative;
+    }
+    .button{
+        font-size: 0.8em;
+    }
+}
