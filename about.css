@@ -57,9 +57,9 @@ body{
   .box_container, .box_container_row{
     width: 100%;
     text-wrap: wrap;  
-    margin: 0   ;
+    margin: 0;
     font-size: 1.05em;
-    padding: 50px 150px;
+    padding: 40px 150px;
   }
   .box_container_row h2, .box_container h2{
     font-size: 1.5em;
@@ -71,6 +71,7 @@ body{
   .box_container:nth-of-type(even) {
     background-color: var(--teal);
     color: var(--light-gray);
+    padding: 60px 150px;
   }
   
   .box_container:first-of-type, .box_container_row:last-of-type{
@@ -83,11 +84,16 @@ body{
   }
 
   .founder{
-    margin: 0 10px;
+    font-family: Roboto;
+    letter-spacing: 0.5px;
+    margin: 10px 10px; 
     text-align: center;
   }
   .founder img{
     min-height: 160px;
+  }
+  .founder p:last-of-type{
+    font-weight: 700;
   }
 
   .follow_us{
