@@ -108,6 +108,17 @@
     text-decoration: underline;
     color: var(--steel-blue);
   }
+  ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  ul li {
+    width: 30%;
+    text-align: center;
+    padding: 20px;
+  }
 
 /*
 img {

@@ -34,6 +34,9 @@ body{
     border: 1px solid black;
     border-width: 0 0 1px 0;
 }
+.topbar a{
+    gap: 10px;
+}
 .button_container{
     display: flex;
     gap: 20px;
