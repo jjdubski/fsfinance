@@ -20,7 +20,7 @@ h2:first-of-type {
     min-width: 320px;
     width: 60%;
     box-shadow: 5px 5px var(--gray);
-    border-radius: 50px;
+    border-radius: 30px;
 }
 
 .main a{  

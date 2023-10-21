@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../styles/question.css">
     <script src="../scripts/question.js"></script>
 </head>
-<body>
+<body onload="checkAnswer()">
       <div class="topbar">
             <a href="../index.html">
                   <img src="../images/logo_transparent.png" alt="logo" width="60" height="55">
@@ -33,16 +33,16 @@
                               What is the definiton of stock?
                         </h2>
                         <div class="box_container">
-                              <div class="response" onclick="checkAnswer()">
+                              <div class="response">
                                     <img><p>A: </p><p>A type of government-issued bond</p>
                               </div>
-                              <div class="response" onclick="checkAnswer()">
+                              <div class="response">
                                     <img><p>B: </p><p>A long-term loan provided to a corporation</p>
                               </div>
-                              <div class="response" onclick="checkAnswer()">
+                              <div class="response">
                                     <img><p>C: </p><p>A certificate of deposit (CD) from a bank</p>
                               </div>
-                              <div class="response" onclick="checkAnswer()" id="correct">
+                              <div class="response" id="correct">
                                     <img><p>D: </p><p>A security that represents ownership in a corporation</p>
                               </div>
                         </div>

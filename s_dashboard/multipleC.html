@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../styles/question.css">
     <script src="../scripts/question.js"></script>
 </head>
-<body>
+<body onload="checkAnswer()">
       <div class="topbar">
             <a href="../index.html">
                   <img src="../images/logo_transparent.png" alt="logo" width="60" height="55">
@@ -33,16 +33,16 @@
                               Investing in ___________ allows individuals to become partial owners of a company.
                         </h2>
                         <div class="box_container">
-                              <div class="response" onclick="checkAnswer()">
+                              <div class="response">
                                     <img><p>A: </p><p>Inventory</p>
                               </div>
-                              <div class="response" onclick="checkAnswer()">
+                              <div class="response">
                                     <img><p>B: </p><p>Bonds</p>
                               </div>
-                              <div class="response" onclick="checkAnswer()" id="correct">
+                              <div class="response" id="correct">
                                     <img><p>C: </p><p>Stock</p>
                               </div>
-                              <div class="response" onclick="checkAnswer()">
+                              <div class="response">
                                     <img><p>D: </p><p>Currency</p>
                               </div>
                         </div>
