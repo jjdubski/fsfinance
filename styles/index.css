@@ -1,163 +1,180 @@
 @import "styles.css";
 
 /* Container */
-  .container {
-    width: 90%;
-    margin: 0 auto;
-  }
-  
-  /* Home Section */
-  #home {
-    background: rgb(175,223,244);
-    background: linear-gradient(100deg, rgba(175,223,244,1) 0%, rgba(109,200,217,1) 7%, rgba(53,132,187,1) 15%, rgba(55,134,188,1) 80%, rgba(109,200,217,1) 90%, rgba(153,215,235,1) 100%);
-    color: #fff; 
-    padding: 100px;
-    text-align: center;
-  }
-  
-  #home h1 {
-    font-size: 48px;
-    font-weight: bold;
-  }
-  
-  #home p {
-    font-size: 18px;
-    margin-top: 20px;
-  }
-  
-  #home a, #contact a {
-    display: inline-block;
-    margin-top: 30px;
-    padding: 12px 24px;
-    background-color: var(--indigo-dye2); /* Dark blue button color */
-    color: white; /* White text color */
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-    transition: background-color 0.5s ease;
-  }
-  #contact {
-    width: 100%;
-    padding: 20px;
-    text-align: center;
-  }
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
 
-  #contact .btn {
-    display: inline-block;
-    margin-top: 0;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    cursor: pointer;
-  }
+/* Home Section */
+#home {
+  background: rgb(175,223,244);
+  background: linear-gradient(100deg, rgba(175,223,244,1) 0%, rgba(109,200,217,1) 7%, rgba(53,132,187,1) 15%, rgba(55,134,188,1) 80%, rgba(109,200,217,1) 90%, rgba(153,215,235,1) 100%);
+  color: #fff; 
+  padding: 100px;
+  text-align: center;
+}
 
-  #home a:hover, #contact a:hover {
-    background-color: var(--sky-blue); 
-    opacity: 0.9;
-  }
-  
+#home h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
 
-  /* Sections */
-  section {
-    padding: 40px 0;
-  }
-  
-  section h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    border: 1px solid var(--indigo-dye);
-    border-width: 0 0 1px;
-  }
-  
-  section p {
-    margin-bottom: 20px;
-  }
+#home p {
+  font-size: 18px;
+  margin-top: 20px;
+}
 
-  #contact{
-    margin-bottom: 50px;
-  }
-  
-  #contact h2 {
-    margin: 0 auto 20px;
-    width: fit-content;
-    text-align: center;
-    padding: 0px 30px 5px;
-  }
-  /* Feature List */
- ul {
+#home a, #contact a {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 24px;
+  background-color: var(--indigo-dye2); /* Dark blue button color */
+  color: white; /* White text color */
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background-color 0.5s ease;
+}
+#contact {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+#contact .btn {
+  display: inline-block;
+  margin-top: 0;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#home a:hover, #contact a:hover {
+  background-color: var(--sky-blue); 
+  opacity: 0.9;
+}
+
+#contact{
+  margin-bottom: 20px;
+}
+
+#contact h2 {
+  margin: 0 auto 20px;
+  width: fit-content;
+  text-align: center;
+  padding: 0px 30px 5px;
+}
+/* Sections */
+section {
+  padding: 40px 0;
+}
+
+section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  border: 1px solid var(--indigo-dye);
+  border-width: 0 0 1px;
+}
+section:nth-child(odd):not(:first-child) {
+  background-color: var(--dark-blue);
+  color: var(--light-gray);
+}
+section:nth-child(odd):not(:first-child) ul li{
+  color: black;
+}
+section:nth-child(odd):not(:first-child) h2{
+  border-color: var(--light-gray);
+}
+section:nth-child(even):not(:first-child) ul li{
+  background-color: var(--indigo-dye);
+  color: var(--light-gray);
+}
+section p {
+  margin-bottom: 20px;
+}
+
+section ul {
   list-style-type: none;
   display: flex;
   justify-content: space-evenly;
   gap: 50px;
+  height: auto;
 }
 
-ul li {
-  width: 50%;
-  max-width: 600px;
-  text-align: center;
+section ul li {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
   padding: 20px;
   background-color: #fff; /* White */
+  border-radius: 10px;
 }
 
-ul li img {
-  width: 100px;
-  height: 100px;
+section ul li img {
+  width: 90%;
+  min-height: 200px;
+  height: auto;
   margin-bottom: 10px;
 }
 
-ul li h3 {
+section ul li h3 {
   font-size: 18px;
   margin-bottom: 10px;
 }
 
-ul li p {
-  font-size: 14px;
-  color: #666; /* Gray */
+section ul li p {
+  width: 80%;
+  font-size: 0.9em;
+  text-align: center;
 }
 
+.box_container_row{
+  font-size: calc(0.8em + 0.35vw);
+  font-family: Roboto, sans-serif;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 20px 10vw;
+  margin: 0 auto;
+  gap: 50px;
+  border: 1px solid var(--indigo-dye);
+  border-width: 1px 0;
+}
+.box_container_row:nth-of-type(2){
+  border-width: 0 0 1px;
+  background-color: var(--dark-blue);
+  color: var(--light-gray);
+}
+.box_container_row img{
+  height: 100%;
+  width: 65%;
+  max-width: 550px;
+  float: left; /* Float the image to the left */
+}
+
+/* Media Queries */
+@media (max-width: 900px) {
   .box_container_row{
-    font-size: calc(0.75em + 0.5vw);
-    font-family: Roboto, sans-serif;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    padding: 20px 10vw;
-    margin: 0 auto;
-    gap: 50px;
-    border: 1px solid var(--indigo-dye);
-    border-width: 1px 0;
-  }
-  .box_container_row:nth-of-type(2){
-    border-width: 0 0 1px;
-    background-color: var(--steel-blue);
-    color: var(--light-gray);
+    flex-wrap: wrap;
   }
   .box_container_row img{
-    height: 100%;
-    width: 65%;
-    max-width: 550px;
-    float: left; /* Float the image to the left */
+    width: 100%;
+    height: auto;
+  }
+  .box_container_row{
+    padding: 20px 5vw;
+  }
+  ul {
+    flex-wrap: wrap;
   }
 
-  /* Media Queries */
-  @media (max-width: 900px) {
-    .box_container_row{
-      flex-wrap: wrap;
-    }
-    .box_container_row img{
-      width: 100%;
-      height: auto;
-    }
-    .box_container_row{
-      padding: 20px 5vw;
-    }
-    ul {
-      flex-wrap: wrap;
-    }
-  
-    ul li {
-      width: 100%;
-      margin-bottom: 20px;
-    }
+  ul li {
+    width: 100%;
+    margin-bottom: 20px;
   }
+}
