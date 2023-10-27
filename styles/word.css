@@ -12,11 +12,7 @@
     border-width: 0 0 1px 0;
 }
 
-.main .box_container_row:nth-child(1){
-    gap: 100px;
-}
-
-.main .box_container_row:not(.box_container .box_container_row){
+.main .box_container_row:nth-child(1), .main .box_container_row:not(.box_container .box_container_row){
     gap: 100px;
 }
 
@@ -35,7 +31,7 @@
 }
 
 #definitionBox, #exampleBox{
-    font-size: 1.1em;
+    font-size: 1em;
     display: inline;
     justify-content: start;
     align-items: normal;

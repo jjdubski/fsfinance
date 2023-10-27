@@ -79,7 +79,7 @@ section h2 {
   border-width: 0 0 1px;
 }
 section:nth-child(odd):not(:first-child) {
-  background-color: var(--dark-blue);
+  background-color: var(--steel-blue);
   color: var(--light-gray);
 }
 section:nth-child(odd):not(:first-child) ul li{
@@ -89,7 +89,7 @@ section:nth-child(odd):not(:first-child) h2{
   border-color: var(--light-gray);
 }
 section:nth-child(even):not(:first-child) ul li{
-  background-color: var(--indigo-dye);
+  background-color: var(--steel-blue);
   color: var(--light-gray);
 }
 section p {
@@ -147,7 +147,7 @@ section ul li p {
 }
 .box_container_row:nth-of-type(2){
   border-width: 0 0 1px;
-  background-color: var(--dark-blue);
+  background-color: var(--steel-blue);
   color: var(--light-gray);
 }
 .box_container_row img{
