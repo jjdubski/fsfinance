@@ -16,7 +16,7 @@
 .response{
     width: 100%;
     min-width: fit-content;
-    margin-top: 30px;
+    margin-top: 20px;
     padding: 0px 30px;
     border: 1px solid var(--indigo-dye);
     border-radius: 10px;
