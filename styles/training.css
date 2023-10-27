@@ -81,14 +81,14 @@ body{
     gap: 10px;
     text-wrap: nowrap;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     .dashboard{
         height: auto;
         margin-top: 0;
         padding-top: 0;
     }
     .main {
-        padding-top: 10s0px;
+        padding-top: 100px;
         flex-direction: column;
         gap: 50px;
     }
